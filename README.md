@@ -101,7 +101,7 @@ Pour isoler proprement chaque TP dans un conteneur Linux, tu peux utiliser
 1. **Cloner le dépôt :**
 
 ```bash
-git clone https://github.com/stephrobert/python-sysadmin-training.git
+git clone https://github.com/stephrobert/python-training.git
 cd python-sysadmin-training
 ```
 
