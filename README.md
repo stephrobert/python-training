@@ -154,7 +154,3 @@ Si ce travail vous aide ou vous inspire, vous pouvez me soutenir ici :
 * **Licence** : [Creative Commons BY-SA
   4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
----
-
-Souhaites-tu que je t’envoie aussi un modèle de TP (`README.md`, `main.py`,
-`tests/test_main.py`, `requirements.txt`) prêt à copier/coller ?
