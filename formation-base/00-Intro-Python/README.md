@@ -42,7 +42,7 @@ Vous devriez voir une version >= 3.10.
 Dans votre terminal, placez-vous dans le dossier du TP :
 
 ```bash
-cd 00-Intro-Python
+cd formation-base/00-Intro-Python
 ```
 
 ---

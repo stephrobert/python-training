@@ -26,52 +26,32 @@ issus du quotidien des administrateurs systèmes.
 
 ## 📚 Structure du Projet
 
-Pour le moment, je pense à une quinzaine de TP, chacun abordant un aspect
-différent de l’administration système avec Python. Chaque TP est autonome et
-peut être réalisé indépendamment des autres. Vous pouvez les suivre dans l’ordre
-qui vous convient.
+Le projet est composé de deux parties :
+
+1. **formation-base** : Concepts fondamentaux de Python.
+2. **automatisation** : Exercices pratiques pour appliquer ces concepts dans un
+   contexte d’administration système.
+
+
+### Formation de base
 
 **TP Disponibles :**
 
-* [`00-Intro-Python`](./00-Intro-Python) — Introduction à Python, syntaxe de base,
+* [`00-Intro-Python`](./formation-base/00-Intro-Python) — Introduction à Python, syntaxe de base,
   variables, types de données.
-* [`01-Fonctions`](./01-Fonctions) — Création de fonctions, paramètres, valeurs
+* [`01-Fonctions`](./formation-base/01-Fonctions) — Création de fonctions, paramètres, valeurs
   par défaut, lambdas, récursion.
 
-**Idées de TP :**
+### Automatisation
 
-* [`02-Fichiers`](./02-Fichiers) — Lecture, écriture, suppression de fichiers et
-  arborescences.
-* [`03-Subprocess`](./03-Subprocess) — Exécution de commandes système, analyse
-  des résultats.
-* [`04-Logs`](./04-Logs) — Analyse et extraction d’erreurs dans des fichiers
-  journaux simulés.
-* [`05-APIs`](./05-APIs) — Appels d’API HTTP (GET, POST), authentification,
-  parsing JSON.
-* [`06-YAML-JSON`](./06-YAML-JSON) — Conversion entre formats, génération de
-  fichiers de configuration.
-* [`07-SSH`](./07-SSH) — Connexion à distance avec `paramiko`, exécution de
-  commandes.
-* [`08-Disque`](./08-Disque) — Surveillance de l’espace disque, génération
-  d’alertes.
-* [`09-Users-Expiration`](./09-Users-Expiration) — Vérification des comptes
-  expirés ou inactifs.
-* [`10-Certificats`](./10-Certificats) — Détection des certificats expirés dans
-  un répertoire.
-* [`11-Rapports`](./11-Rapports) — Génération de rapports HTML à partir
-  d’informations système.
-* [`12-Inventory-API`](./12-Inventory-API) — Création d’une API REST pour
-  exposer l’état système avec FastAPI.
-* [`13-Rotation-Logs`](./13-Rotation-Logs) — Gestion manuelle de la rotation des
-  logs.
-* [`14-Nettoyage-Temp`](./14-Nettoyage-Temp) — Suppression automatisée de
-  fichiers temporaires obsolètes.
-* [`15-Ping-Subnet`](./15-Ping-Subnet) — Scan IP d’un sous-réseau avec rapport
-  de disponibilité.
-* [`16-Backup-Automation`](./16-Backup-Automation) — Sauvegarde automatique avec
-  noms dynamiques.
-* [`17-Supervision-Services`](./17-Supervision-Services) — Vérification et
-  redémarrage automatique de services critiques.
+**Idées de TP** :
+
+* [`02-Backup`](./automatisation/01-Backup) — Script de sauvegarde de fichiers.
+* [`03-Log-Parser`](./automatisation/02-Log-Parser) — Analyse de fichiers log pour extraire des
+  informations pertinentes.
+* [`04-API-Client`](./automatisation/03-API-Client) — Client pour interagir avec une API REST
+  (par exemple, récupérer des données météo).
+* ...
 
 ---
 
