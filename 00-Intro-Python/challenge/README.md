@@ -76,6 +76,28 @@ Vous pouvez relancer le script plusieurs fois pour tester différentes valeurs :
 python3 devinette.py
 ```
 
+## Validation automatique
+
+Pour valider votre solution, vous pouvez utiliser les tests fournis dans le dossier `tests/` :
+
+```bash
+pytest -v
+```
+
+Vous devriez voir un test passer avec succès :
+
+```bash
+=== test session starts ===
+platform linux -- Python 3.10.12, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/outscale/Projets/python-training/00-Intro-Python/challenge
+plugins: testinfra-10.2.2
+collected 2 items
+
+tests/test_devinette.py ..     [100%]
+
+=== 2 passed in 0.01s ===
+```
+
 ---
 
 📚 Amusez-vous bien et bravo si vous trouvez du premier coup 😉
