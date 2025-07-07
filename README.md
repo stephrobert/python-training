@@ -31,10 +31,13 @@ différent de l’administration système avec Python. Chaque TP est autonome et
 peut être réalisé indépendamment des autres. Vous pouvez les suivre dans l’ordre
 qui vous convient.
 
+**TP Disponibles :**
+
+* [`00-Intro-Python`](./00-Intro-Python) — Introduction à Python, syntaxe de base,
+  variables, types de données.
+
 **Idées de TP :**
 
-* [`00-Intro-Python`](./00-Intro-Python) — Syntaxe de base, variables,
-  conditions, boucles, fonctions.
 * [`01-Fichiers`](./01-Fichiers) — Lecture, écriture, suppression de fichiers et
   arborescences.
 * [`02-Subprocess`](./02-Subprocess) — Exécution de commandes système, analyse
