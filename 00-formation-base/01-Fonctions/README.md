@@ -34,7 +34,7 @@ avancés et les lambdas.
 Place-toi dans le dossier du TP :
 
 ```bash
-cd formation-base/02-Fonctions
+cd 00-formation-base/02-Fonctions
 ```
 
 Tu travailles désormais dans ce dossier.
