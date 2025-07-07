@@ -35,40 +35,42 @@ qui vous convient.
 
 * [`00-Intro-Python`](./00-Intro-Python) — Introduction à Python, syntaxe de base,
   variables, types de données.
+* [`01-Fonctions`](./01-Fonctions) — Création de fonctions, paramètres, valeurs
+  par défaut, lambdas, récursion.
 
 **Idées de TP :**
 
-* [`01-Fichiers`](./01-Fichiers) — Lecture, écriture, suppression de fichiers et
+* [`02-Fichiers`](./02-Fichiers) — Lecture, écriture, suppression de fichiers et
   arborescences.
-* [`02-Subprocess`](./02-Subprocess) — Exécution de commandes système, analyse
+* [`03-Subprocess`](./03-Subprocess) — Exécution de commandes système, analyse
   des résultats.
-* [`03-Logs`](./03-Logs) — Analyse et extraction d’erreurs dans des fichiers
+* [`04-Logs`](./04-Logs) — Analyse et extraction d’erreurs dans des fichiers
   journaux simulés.
-* [`04-APIs`](./04-APIs) — Appels d’API HTTP (GET, POST), authentification,
+* [`05-APIs`](./05-APIs) — Appels d’API HTTP (GET, POST), authentification,
   parsing JSON.
-* [`05-YAML-JSON`](./05-YAML-JSON) — Conversion entre formats, génération de
+* [`06-YAML-JSON`](./06-YAML-JSON) — Conversion entre formats, génération de
   fichiers de configuration.
-* [`06-SSH`](./06-SSH) — Connexion à distance avec `paramiko`, exécution de
+* [`07-SSH`](./07-SSH) — Connexion à distance avec `paramiko`, exécution de
   commandes.
-* [`07-Disque`](./07-Disque) — Surveillance de l’espace disque, génération
+* [`08-Disque`](./08-Disque) — Surveillance de l’espace disque, génération
   d’alertes.
-* [`08-Users-Expiration`](./08-Users-Expiration) — Vérification des comptes
+* [`09-Users-Expiration`](./09-Users-Expiration) — Vérification des comptes
   expirés ou inactifs.
-* [`09-Certificats`](./09-Certificats) — Détection des certificats expirés dans
+* [`10-Certificats`](./10-Certificats) — Détection des certificats expirés dans
   un répertoire.
-* [`10-Rapports`](./10-Rapports) — Génération de rapports HTML à partir
+* [`11-Rapports`](./11-Rapports) — Génération de rapports HTML à partir
   d’informations système.
-* [`11-Inventory-API`](./11-Inventory-API) — Création d’une API REST pour
+* [`12-Inventory-API`](./12-Inventory-API) — Création d’une API REST pour
   exposer l’état système avec FastAPI.
-* [`12-Rotation-Logs`](./12-Rotation-Logs) — Gestion manuelle de la rotation des
+* [`13-Rotation-Logs`](./13-Rotation-Logs) — Gestion manuelle de la rotation des
   logs.
-* [`13-Nettoyage-Temp`](./13-Nettoyage-Temp) — Suppression automatisée de
+* [`14-Nettoyage-Temp`](./14-Nettoyage-Temp) — Suppression automatisée de
   fichiers temporaires obsolètes.
-* [`14-Ping-Subnet`](./14-Ping-Subnet) — Scan IP d’un sous-réseau avec rapport
+* [`15-Ping-Subnet`](./15-Ping-Subnet) — Scan IP d’un sous-réseau avec rapport
   de disponibilité.
-* [`15-Backup-Automation`](./15-Backup-Automation) — Sauvegarde automatique avec
+* [`16-Backup-Automation`](./16-Backup-Automation) — Sauvegarde automatique avec
   noms dynamiques.
-* [`16-Supervision-Services`](./16-Supervision-Services) — Vérification et
+* [`17-Supervision-Services`](./17-Supervision-Services) — Vérification et
   redémarrage automatique de services critiques.
 
 ---
