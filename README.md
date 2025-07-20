@@ -32,24 +32,28 @@ Le projet est composé de deux parties :
 2. **automatisation** : Exercices pratiques pour appliquer ces concepts dans un
    contexte d’administration système.
 
-
 ### Formation de base
 
 **TP Disponibles :**
 
-* [`00-Intro-Python`](./formation-base/00-Intro-Python) — Introduction à Python, syntaxe de base,
+* [`00-Intro-Python`](./00-formation-base/00-Intro-Python) — Introduction à Python, syntaxe de base,
   variables, types de données.
-* [`01-Fonctions`](./formation-base/01-Fonctions) — Création de fonctions, paramètres, valeurs
+* [`01-Structures-Collections`](./00-formation-base/01-Structures-Collections) — Structures de contrôle (if/else, boucles) et collections (listes, tuples, dictionnaires).
+* [`02-Fonctions`](./00-formation-base/02-Fonctions) — Création de fonctions, paramètres, valeurs
   par défaut, lambdas, récursion.
 
 ### Automatisation
 
+**TP Disponibles :**
+
+* [`01-Nmap`](./01-automatisation/01-Nmap) — Utilisation de Nmap pour scanner des réseaux.
+
 **Idées de TP** :
 
-* [`02-Backup`](./automatisation/01-Backup) — Script de sauvegarde de fichiers.
-* [`03-Log-Parser`](./automatisation/02-Log-Parser) — Analyse de fichiers log pour extraire des
+* [`02-Backup`](./01-automatisation/01-Backup) — Script de sauvegarde de fichiers.
+* [`03-Log-Parser`](./01-automatisation/02-Log-Parser) — Analyse de fichiers log pour extraire des
   informations pertinentes.
-* [`04-API-Client`](./automatisation/03-API-Client) — Client pour interagir avec une API REST
+* [`04-API-Client`](./01-automatisation/03-API-Client) — Client pour interagir avec une API REST
   (par exemple, récupérer des données météo).
 * ...
 
