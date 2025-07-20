@@ -1,29 +1,27 @@
-# 00 - Introduction à Python
+# 00 - Introduction à Python - Les Fondamentaux
 
 Bienvenue dans ce premier chapitre de la formation **Python pour administrateurs
 systèmes**.
 
-Ce TP vous guide dans la création de votre **premier script Python interactif**.
-À chaque étape, vous modifierez le script et **l’exécuterez immédiatement** pour
-observer son comportement.
+Ce TP vous guide dans la découverte des **fondamentaux de Python** abordés dans le guide :
+variables, types de données, opérations de base et bonnes pratiques pour l'écriture de scripts.
 
 ---
 
 ## 🎯 Objectifs
 
-* Comprendre la structure d’un script Python
-* Lire des données utilisateur
-* Manipuler des types (`str`, `int`)
-* Afficher des messages dynamiques
-* Utiliser un module standard (`datetime`)
+* Maîtriser les variables et types de données de base
+* Effectuer des opérations mathématiques et logiques
+* Manipuler des chaînes de caractères
+* Utiliser les commentaires pour documenter le code
+* Appliquer les bonnes pratiques (shebang, structure de script)
 * Exécuter un script depuis le terminal
 
 ---
 
 ## 📘 Préparation
 
-Lisez au préalable : 🔗 [**Introduction à
-Python**](https://blog.stephane-robert.info/docs/developper/programmation/python/)
+Lisez au préalable : 🔗 [**Débuter avec Python - Les Fondamentaux**](https://blog.stephane-robert.info/docs/developper/programmation/python/)
 
 Assurez-vous que Python 3 est installé :
 
@@ -37,7 +35,7 @@ Vous devriez voir une version >= 3.10.
 
 ## 🛠️ Étapes du TP
 
-### Etape 1. Se placer dans le bon dossier
+### Etape 1. Créer la structure du projet
 
 Dans votre terminal, placez-vous dans le dossier du TP :
 
@@ -45,190 +43,371 @@ Dans votre terminal, placez-vous dans le dossier du TP :
 cd 00-formation-base/00-Intro-Python
 ```
 
----
-
-### Etape 2. Créer le fichier `main.py`
-
-Créez le fichier :
+Créez le fichier principal :
 
 ```bash
-touch main.py
+touch fondamentaux.py
 ```
 
 Ouvrez-le dans votre éditeur de code :
 
 ```bash
-nano main.py
+nano fondamentaux.py
 # ou
-code main.py
+code fondamentaux.py
 ```
 
 ---
 
-### Etape 3. Ajouter un message de bienvenue
+### Etape 2. Ajouter l'en-tête du script avec bonnes pratiques
 
-Ajoutez ce code :
-
-```python
-print("Bienvenue dans ce premier programme Python !")
-```
-
-💡 **Exécutez maintenant le script :**
-
-```bash
-python3 main.py
-```
-
-Vous devez voir :
-
-```bash
-Bienvenue dans ce premier programme Python !
-```
-
----
-
-### Etape 4. Lire le prénom de l’utilisateur
-
-Ajoutez cette ligne :
-
-```python
-prenom = input("Quel est ton prénom ? ")
-```
-
-Et modifiez la ligne précédente pour inclure le prénom :
-
-```python
-print(f"Bienvenue {prenom} !")
-```
-
-💡 **Exécutez à nouveau le script** et entrez votre prénom lorsqu’il vous le
-demande.
-
----
-
-### Etape 5. Lire l’année de naissance
-
-Ajoutez ceci :
-
-```python
-annee_naissance = int(input("En quelle année es-tu né ? "))
-```
-
-💡 **Relancez le script** et testez la saisie d’une année (ex : 1990).
-
----
-
-### Etape 6. Calculer l’âge
-
-Ajoutez les lignes suivantes pour calculer l’âge :
-
-```python
-import datetime
-
-annee_actuelle = datetime.datetime.now().year
-age = annee_actuelle - annee_naissance
-```
-
-💡 **Exécutez le script** et vérifiez que le programme ne plante pas après
-saisie.
-
----
-
-### Etape 7. Vérifier l’année saisie
-
-Ajoutez un contrôle simple :
-
-```python
-if age < 0:
-    print("Tu viens du futur ? 😄")
-    exit(1)
-```
-
-💡 **Lancez le script et entrez une année future** (ex : 2090) pour tester.
-
----
-
-### Etape 8. Afficher le résultat final
-
-Terminez avec une ligne d’affichage :
-
-```python
-print(f"Bonjour {prenom}, tu as {age} ans.")
-```
-
-💡 **Exécutez le script complet** et vérifiez que tout fonctionne comme attendu.
-
----
-
-### Etape 9. Ajouter un shebang (optionnel)
-
-Ajoutez cette ligne tout en haut du fichier :
+Commencez par ajouter le shebang et l'en-tête selon les bonnes pratiques :
 
 ```python
 #!/usr/bin/env python3
+# Auteur : [Votre nom]
+# Date : 2025-01-XX
+# Description : Script d'apprentissage des fondamentaux Python
+
+# Bienvenue dans l'apprentissage des fondamentaux Python
+print("=== Fondamentaux de Python ===")
 ```
 
-Puis rendez le script exécutable :
+💡 **Exécutez le script pour vérifier :**
 
 ```bash
-chmod +x main.py
+python3 fondamentaux.py
 ```
 
-💡 Vous pouvez maintenant lancer le script directement :
+---
+
+### Etape 3. Explorer les variables et types de données
+
+Ajoutez le code suivant pour expérimenter avec les types de base :
+
+```python
+# === VARIABLES ET TYPES DE DONNÉES ===
+print("\n1. Variables et types de données")
+
+# Déclaration de variables de différents types
+nom = "Alice"  # Chaîne de caractères (str)
+age = 30       # Entier (int)
+taille = 1.75  # Flottant (float)
+est_majeur = True  # Booléen (bool)
+
+# Affichage des variables avec leur type
+print(f"Nom: {nom} (type: {type(nom).__name__})")
+print(f"Age: {age} (type: {type(age).__name__})")
+print(f"Taille: {taille} (type: {type(taille).__name__})")
+print(f"Est majeur: {est_majeur} (type: {type(est_majeur).__name__})")
+```
+
+💡 **Exécutez et observez les différents types affichés.**
+
+---
+
+### Etape 4. Pratiquer les opérations mathématiques
+
+Ajoutez des exemples d'opérations mathématiques :
+
+```python
+# === OPÉRATIONS MATHÉMATIQUES ===
+print("\n2. Opérations mathématiques")
+
+a = 10
+b = 3
+
+# Les opérations de base
+addition = a + b
+soustraction = a - b
+multiplication = a * b
+division = a / b
+modulo = a % b
+
+print(f"a = {a}, b = {b}")
+print(f"Addition: {a} + {b} = {addition}")
+print(f"Soustraction: {a} - {b} = {soustraction}")
+print(f"Multiplication: {a} * {b} = {multiplication}")
+print(f"Division: {a} / {b} = {division:.2f}")
+print(f"Modulo: {a} % {b} = {modulo}")
+
+# Priorités des opérations
+resultat1 = 5 + 2 * 3
+resultat2 = (5 + 2) * 3
+print(f"\nPriorités: 5 + 2 * 3 = {resultat1}")
+print(f"Avec parenthèses: (5 + 2) * 3 = {resultat2}")
+```
+
+💡 **Exécutez et vérifiez les calculs.**
+
+---
+
+### Etape 5. Manipulation de chaînes de caractères
+
+Ajoutez les opérations sur les chaînes :
+
+```python
+# === MANIPULATION DE CHAÎNES ===
+print("\n3. Manipulation de chaînes de caractères")
+
+chaine1 = "Bonjour"
+chaine2 = "Python"
+
+# Opérations sur les chaînes
+concatenation = chaine1 + ", " + chaine2
+longueur = len(chaine1)
+premier_caractere = chaine1[0]
+sous_chaine = chaine2[0:3]
+
+print(f"Chaîne 1: '{chaine1}'")
+print(f"Chaîne 2: '{chaine2}'")
+print(f"Concaténation: '{concatenation}'")
+print(f"Longueur de '{chaine1}': {longueur}")
+print(f"Premier caractère de '{chaine1}': '{premier_caractere}'")
+print(f"Sous-chaîne '{chaine2}'[0:3]: '{sous_chaine}'")
+```
+
+💡 **Testez les manipulations de chaînes.**
+
+---
+
+### Etape 6. Opérations logiques
+
+Ajoutez les opérateurs logiques :
+
+```python
+# === OPÉRATIONS LOGIQUES ===
+print("\n4. Opérations logiques")
+
+vrai = True
+faux = False
+
+# Opérateurs logiques
+resultat_et = vrai and faux
+resultat_ou = vrai or faux
+resultat_non = not vrai
+
+print(f"vrai = {vrai}, faux = {faux}")
+print(f"vrai AND faux = {resultat_et}")
+print(f"vrai OR faux = {resultat_ou}")
+print(f"NOT vrai = {resultat_non}")
+
+# Comparaisons
+x = 10
+y = 20
+print(f"\nx = {x}, y = {y}")
+print(f"x == y: {x == y}")
+print(f"x < y: {x < y}")
+print(f"x >= y: {x >= y}")
+```
+
+💡 **Observez les résultats des opérations logiques.**
+
+---
+
+### Etape 7. Conversions de types
+
+Ajoutez les conversions entre types :
+
+```python
+# === CONVERSIONS DE TYPES ===
+print("\n5. Conversions entre types")
+
+# Conversion de chaîne vers nombre
+nombre_texte = "123"
+nombre_entier = int(nombre_texte)
+nombre_flottant = float(nombre_texte)
+
+print(f"Chaîne: '{nombre_texte}' -> Entier: {nombre_entier}")
+print(f"Chaîne: '{nombre_texte}' -> Flottant: {nombre_flottant}")
+
+# Conversion de nombre vers chaîne
+age_num = 30
+age_texte = str(age_num)
+print(f"Entier: {age_num} -> Chaîne: '{age_texte}'")
+
+# Conversion booléenne
+print(f"bool(1): {bool(1)}")
+print(f"bool(0): {bool(0)}")
+print(f"bool(''): {bool('')}")
+print(f"bool('Hello'): {bool('Hello')}")
+```
+
+💡 **Testez les différentes conversions.**
+
+---
+
+### Etape 8. Rendre le script exécutable
+
+Rendez votre script exécutable directement :
 
 ```bash
-./main.py
+chmod +x fondamentaux.py
 ```
 
-Normalement, vous devriez avoir le fichier `main.py` qui ressemble à ceci :
+💡 **Testez l'exécution directe :**
+
+```bash
+./fondamentaux.py
+```
+
+---
+
+### Etape 9. Script complet final
+
+Votre script `fondamentaux.py` devrait ressembler à ceci :
 
 ```python
 #!/usr/bin/env python3
-import datetime
+# Auteur : [Votre nom]
+# Date : 2025-01-XX
+# Description : Script d'apprentissage des fondamentaux Python
 
-print("Bienvenue dans ce premier programme Python !")
-prenom = input("Quel est ton prénom ? ")
-print(f"Bienvenue {prenom} !")
-annee_naissance = int(input("En quelle année es-tu né ? "))
-annee_actuelle = datetime.datetime.now().year
-age = annee_actuelle - annee_naissance
-if age < 0:
-    print("Tu viens du futur ? 😄")
-    exit(1)
-print(f"Bonjour {prenom}, tu as {age} ans.")
+# Bienvenue dans l'apprentissage des fondamentaux Python
+print("=== Fondamentaux de Python ===")
+
+# === VARIABLES ET TYPES DE DONNÉES ===
+print("\n1. Variables et types de données")
+
+# Déclaration de variables de différents types
+nom = "Alice"  # Chaîne de caractères (str)
+age = 30       # Entier (int)
+taille = 1.75  # Flottant (float)
+est_majeur = True  # Booléen (bool)
+
+# Affichage des variables avec leur type
+print(f"Nom: {nom} (type: {type(nom).__name__})")
+print(f"Age: {age} (type: {type(age).__name__})")
+print(f"Taille: {taille} (type: {type(taille).__name__})")
+print(f"Est majeur: {est_majeur} (type: {type(est_majeur).__name__})")
+
+# === OPÉRATIONS MATHÉMATIQUES ===
+print("\n2. Opérations mathématiques")
+
+a = 10
+b = 3
+
+# Les opérations de base
+addition = a + b
+soustraction = a - b
+multiplication = a * b
+division = a / b
+modulo = a % b
+
+print(f"a = {a}, b = {b}")
+print(f"Addition: {a} + {b} = {addition}")
+print(f"Soustraction: {a} - {b} = {soustraction}")
+print(f"Multiplication: {a} * {b} = {multiplication}")
+print(f"Division: {a} / {b} = {division:.2f}")
+print(f"Modulo: {a} % {b} = {modulo}")
+
+# Priorités des opérations
+resultat1 = 5 + 2 * 3
+resultat2 = (5 + 2) * 3
+print(f"\nPriorités: 5 + 2 * 3 = {resultat1}")
+print(f"Avec parenthèses: (5 + 2) * 3 = {resultat2}")
+
+# === MANIPULATION DE CHAÎNES ===
+print("\n3. Manipulation de chaînes de caractères")
+
+chaine1 = "Bonjour"
+chaine2 = "Python"
+
+# Opérations sur les chaînes
+concatenation = chaine1 + ", " + chaine2
+longueur = len(chaine1)
+premier_caractere = chaine1[0]
+sous_chaine = chaine2[0:3]
+
+print(f"Chaîne 1: '{chaine1}'")
+print(f"Chaîne 2: '{chaine2}'")
+print(f"Concaténation: '{concatenation}'")
+print(f"Longueur de '{chaine1}': {longueur}")
+print(f"Premier caractère de '{chaine1}': '{premier_caractere}'")
+print(f"Sous-chaîne '{chaine2}'[0:3]: '{sous_chaine}'")
+
+# === OPÉRATIONS LOGIQUES ===
+print("\n4. Opérations logiques")
+
+vrai = True
+faux = False
+
+# Opérateurs logiques
+resultat_et = vrai and faux
+resultat_ou = vrai or faux
+resultat_non = not vrai
+
+print(f"vrai = {vrai}, faux = {faux}")
+print(f"vrai AND faux = {resultat_et}")
+print(f"vrai OR faux = {resultat_ou}")
+print(f"NOT vrai = {resultat_non}")
+
+# Comparaisons
+x = 10
+y = 20
+print(f"\nx = {x}, y = {y}")
+print(f"x == y: {x == y}")
+print(f"x < y: {x < y}")
+print(f"x >= y: {x >= y}")
+
+# === CONVERSIONS DE TYPES ===
+print("\n5. Conversions entre types")
+
+# Conversion de chaîne vers nombre
+nombre_texte = "123"
+nombre_entier = int(nombre_texte)
+nombre_flottant = float(nombre_texte)
+
+print(f"Chaîne: '{nombre_texte}' -> Entier: {nombre_entier}")
+print(f"Chaîne: '{nombre_texte}' -> Flottant: {nombre_flottant}")
+
+# Conversion de nombre vers chaîne
+age_num = 30
+age_texte = str(age_num)
+print(f"Entier: {age_num} -> Chaîne: '{age_texte}'")
+
+# Conversion booléenne
+print(f"bool(1): {bool(1)}")
+print(f"bool(0): {bool(0)}")
+print(f"bool(''): {bool('')}")
+print(f"bool('Hello'): {bool('Hello')}")
+
+print("\n=== Fin du script ===")
 ```
 
 ---
 
 ## ✅ Ce que vous avez appris
 
-* Comment lire et convertir des entrées utilisateur
-* Comment utiliser des variables et faire des calculs
-* Comment afficher des messages personnalisés
-* Comment utiliser un module standard (`datetime`)
-* Comment structurer et exécuter un script Python
+* **Variables et types de données** : Création et manipulation des types de base (str, int, float, bool)
+* **Opérations mathématiques** : Addition, soustraction, multiplication, division, modulo et priorités
+* **Manipulation de chaînes** : Concaténation, longueur, indexation et découpage
+* **Opérations logiques** : Utilisation des opérateurs and, or, not et comparaisons
+* **Conversions de types** : Transformation entre différents types de données
+* **Bonnes pratiques** : Shebang, commentaires et structure de script
+* **Exécution de scripts** : Lancement depuis le terminal
 
 ---
 
-## 🏁 Challenge : jeu de devinette
+## 🏁 Challenge : calculatrice simple
 
-Un exercice complémentaire est disponible dans le dossier
-[`challenge`](./challenge/README.md).
+Un exercice complémentaire est disponible dans le dossier [`challenge`](./challenge/README.md).
 
-Vous développerez un petit **jeu interactif** pour deviner un nombre mystère
-avec :
+Vous développerez une **jeu de devinette** qui utilise tous les concepts vus :
 
-* Une boucle `while`
-* Des conditions `if`
-* Un compteur d’essais
+* Saisie utilisateur avec `input()`
+* Boucles et conditions
+* Conversion de types
+* Affichage dynamique
+* Affichage formaté des résultats
 
 ---
 
 ## 🧰 Suite du parcours
 
-Vous pouvez maintenant passer au TP suivant : [`01-Fichiers`](../01-Fichiers),
-où vous apprendrez à manipuler des fichiers et des répertoires avec Python.
+Vous pouvez maintenant passer au tp suivant : [**Structures de contrôle et collections**](),
+où vous apprendrez les conditions, boucles et structures de données.
 
 ---
 
-📚 Bon apprentissage et bonne automatisation avec Python !
+📚 Bon apprentissage et bonne découverte des fondamentaux Python !
