@@ -25,7 +25,7 @@ avancés et les lambdas.
 ## 📘 Préparation
 
 1. Lis la doc : 🔗 [**Fonctions
-   en Python**](https://blog.stephane-robert.info/docs/developper/programmation/python/fonctions/)
+   en Python**](https://www.stephane-robert.info/docs/developper/programmation/python/fonctions/)
 
 ---
 

@@ -21,7 +21,7 @@ variables, types de données, opérations de base et bonnes pratiques pour l'éc
 
 ## 📘 Préparation
 
-Lisez au préalable : 🔗 [**Débuter avec Python - Les Fondamentaux**](https://blog.stephane-robert.info/docs/developper/programmation/python/)
+Lisez au préalable : 🔗 [**Débuter avec Python - Les Fondamentaux**](https://www.stephane-robert.info/docs/developper/programmation/python/)
 
 Assurez-vous que Python 3 est installé :
 
