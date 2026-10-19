@@ -22,7 +22,7 @@ conditions, boucles, listes, tuples et dictionnaires pour créer des programmes 
 
 ## 📘 Préparation
 
-Lisez au préalable : 🔗 [**Structures de contrôle et collections en Python**](https://blog.stephane-robert.info/docs/developper/programmation/python/structures-collections/)
+Lisez au préalable : 🔗 [**Structures de contrôle et collections en Python**](https://www.stephane-robert.info/docs/developper/programmation/python/structures-collections/)
 
 Assurez-vous d'avoir terminé le TP précédent et que Python 3 est installé :
 

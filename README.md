@@ -78,7 +78,7 @@ pipx inject pytest pytest-testinfra
 
 Pour isoler proprement chaque TP dans un conteneur Linux, tu peux utiliser
 **Incus**. Cf. guide complet d’installation ici :
-[https://blog.stephane-robert.info/docs/homelab/incus/](https://blog.stephane-robert.info/docs/homelab/incus/)
+[https://www.stephane-robert.info/docs/homelab/incus/](https://www.stephane-robert.info/docs/homelab/incus/)
 
 ---
 
